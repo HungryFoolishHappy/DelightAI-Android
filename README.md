@@ -22,8 +22,8 @@ dependencies {
 Import the module in your project:
 
 ```kotlin
-import com.delightai.api.ChatBuilder
-import com.delightai.api.PollingBuilder
+import global.delight.delightai.ChatBuilder
+import global.delight.delightai.PollingBuilder
 ```
 
 ```koltin
