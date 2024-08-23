@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.App" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen.IconBackground">
+        <!-- Set the splash screen background to black -->
+        <item name="windowSplashScreenBackground">#009bfe</item>
+        <!-- Use windowSplashScreenAnimatedIcon to add a drawable or an animated
+             drawable. -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/delight_screen_2</item>
+        <!-- Set the theme of the Activity that follows your splash screen. -->
+        <item name="postSplashScreenTheme">@style/Theme.App</item>
+<!--        <item name="windowSplashScreenIconBackgroundColor">#009bfe</item>-->
+
+    </style>
+</resources>
