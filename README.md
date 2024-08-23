@@ -1,15 +1,22 @@
 # DelightAI-Android
 
 ## Introduction
-This demo app uses [DelightAI-Android](https://github.com/HungryFoolishHappy/DelightAI-Android). Delight is an "AI for All" platform that lets anyone create their own AI agent, chatbot, or copilot without coding or technical skills. It simplifies the AI creation process to improve life, work, and play.
+Delight is an "AI for All" platform that lets anyone create their own AI agent, chatbot, or copilot without coding or technical skills. It simplifies the AI creation process to improve life, work, and play.
 
 ## Demo
 To try the demo app, simply clone this project.
-[Delight Demo Video.webm](https://github.com/user-attachments/assets/2383c679-7b67-4dfd-b2eb-1a01bf05c979)
-
-## Installation New Project
+[delight-android-demo.webm](https://github.com/user-attachments/assets/cfc6228e-e7be-469f-a722-e3ceceedaefd)
 
 ## Installation 💻
+In your `build.gradle.kts` implement your dependencies:
+
+```kotlin
+dependencies {
+    ...
+    implementation("global.delight:delightai:0.0.1")
+    ...
+}
+```
 
 ## Usage Example
 Import the module in your project:
