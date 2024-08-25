@@ -5,7 +5,11 @@ Delight is an "AI for All" platform that lets anyone create their own AI agent, 
 
 ## Demo
 To try the demo app, simply clone this project.
-[delight-android-demo.webm](https://github.com/user-attachments/assets/cfc6228e-e7be-469f-a722-e3ceceedaefd)
+
+
+https://github.com/user-attachments/assets/fb541c65-2024-41a4-9092-e20887f1d647
+
+
 
 ## Installation 💻
 In your `build.gradle.kts` implement your dependencies:
