@@ -11,15 +11,13 @@ To try the demo app, simply clone this project. The demo comes with a pre-built,
 
 https://github.com/user-attachments/assets/fb541c65-2024-41a4-9092-e20887f1d647
 
-
-
 ## Installation 💻
 In your `build.gradle.kts` implement your dependencies:
 
 ```kotlin
 dependencies {
     ...
-    implementation("global.delight:delightai:0.0.1")
+    implementation("global.delight:delightai:0.0.2")
     ...
 }
 ```
