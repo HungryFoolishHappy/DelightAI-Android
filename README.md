@@ -1,11 +1,13 @@
 # DelightAI-Android
 
 ## Introduction
-Delight is an "AI for All" platform that lets anyone create their own AI agent, chatbot, or copilot without coding or technical skills. It simplifies the AI creation process to improve life, work, and play.
+Delight is an "AI for All" platform that lets you create your own AI agent or chatbot with no code or low code. 
+
+Using this SDK, you can embed your agent into your Android app. Creating an agent on Delight (https://delight.global) takes only a few minutes, and 
+so is embedding it into your app.
 
 ## Demo
-To try the demo app, simply clone this project.
-
+To try the demo app, simply clone this project. The demo comes with a pre-built, sample agent.
 
 https://github.com/user-attachments/assets/fb541c65-2024-41a4-9092-e20887f1d647
 
@@ -30,16 +32,18 @@ import global.delight.delightai.ChatBuilder
 import global.delight.delightai.PollingBuilder
 ```
 
+Initialize ChatBuilder and PollingBuilder. Call the send(...) function to send information to your agent. Then, handle the agent response which will arrive by polling.
+
 ```koltin
 GlobalScope.launch {
     val build = ChatBuilder().build() 
     val pollingBuild = PollingBuilder().build()
     val response = build.send(
-                        text = text, // text to DelightAI
-                        webhook_id = webhook_id, // a demo webhook Id, you can use it for testing
-                        user_id = user_id, // user id that send to DelightAI
-                        username = username, // username that send to DelightAI
-                        message_id = message_id) // message id 
+                        text = text, // text to DelightAI, usually user’s message or prompt
+                        webhook_id = webhook_id, // our demo webhook id, or your agent’s actual webhook id from https://delight.global
+                        user_id = user_id,
+                        username = username,
+                        message_id = message_id)
     withContext(Dispatchers.IO) {
         val pollingResponse = pollingBuild.polling(webhook_id = response.poll)
         if (pollingResponse?.completed == true) {
