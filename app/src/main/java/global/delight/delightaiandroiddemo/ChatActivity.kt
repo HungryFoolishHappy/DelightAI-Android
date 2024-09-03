@@ -194,11 +194,11 @@ fun BottomTextField(
                     val pollingBuild = PollingBuilder().build()
                     val waitingResponseMessage = Message(isUser = false, text = "waiting for the response ...")
                     val response = build.send(
-                        text = text, // text to DelightAI
+                        text = text, // text to DelightAI, usually user’s message or prompt
                         webhook_id = webhook_id, // a demo webhook Id, you can use it for testing
-                        user_id = user_id, // user id that send to DelightAI
-                        username = username, // username that send to DelightAI
-                        message_id = waitingResponseMessage.id) // message id
+                        user_id = user_id, // id for this user in your app - completely your choice
+                        username = username, // username for this user in your app - completely your choice
+                        message_id = waitingResponseMessage.id) // id for this message in your app - completely your choice
 
                     onMessagesAdd(waitingResponseMessage)
                     onTextChange("")
