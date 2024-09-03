@@ -193,7 +193,7 @@ fun BottomTextField(
                     val build = ChatBuilder().build()
                     val pollingBuild = PollingBuilder().build()
                     val waitingResponseMessage = Message(isUser = false, text = "waiting for the response ...")
-                    val response = build.send(
+                    val response = build.sendChat(
                         text = text, // text to DelightAI, usually user’s message or prompt
                         webhook_id = webhook_id, // a demo webhook Id, you can use it for testing
                         user_id = user_id, // id for this user in your app - completely your choice

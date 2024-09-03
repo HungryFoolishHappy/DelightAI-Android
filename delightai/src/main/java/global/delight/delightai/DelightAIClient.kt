@@ -6,7 +6,7 @@ import global.delight.delightai.model.DelightPollingResponse
 import global.delight.delightai.model.DelightResponse
 
 class DelightAIClient internal constructor(builder: DelightAIClientBuilder) {
-    suspend fun send(text: String, webhook_id: String, user_id: String, username: String, message_id: String): DelightResponse? {
+    suspend fun sendChat(text: String, webhook_id: String, user_id: String, username: String, message_id: String): DelightResponse? {
         val delightAI = DelightAIRepository()
         return delightAI.sendChat(text, webhook_id, user_id, username, message_id)
     }
