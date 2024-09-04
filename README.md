@@ -36,7 +36,7 @@ Initialize ChatBuilder and PollingBuilder. Call the send(...) function to send i
 GlobalScope.launch {
     val build = ChatBuilder().build() 
     val pollingBuild = PollingBuilder().build()
-    val response = build.send(
+    val response = build.sendChat(
                         text = text, // text to DelightAI, usually user’s message or prompt
                         webhook_id = webhook_id, // our demo webhook id, or your agent’s actual webhook id from https://delight.global
                         user_id = user_id,
