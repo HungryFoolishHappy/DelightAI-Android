@@ -1,17 +1,17 @@
 # DelightAI-Android
 
-## Introduction
+## Introduction 📖
 Delight is an "AI for All" platform that lets you create your own AI agent or chatbot with no code or low code. 
 
 Using this SDK, you can embed your agent into your Android app. Creating an agent on Delight (https://delight.global) takes only a few minutes, and 
 so is embedding it into your app.
 
-## Demo
+## Demo 🎥
 To try the demo app, simply clone this project. The demo comes with a pre-built, sample agent.
 
 https://github.com/user-attachments/assets/fb541c65-2024-41a4-9092-e20887f1d647
 
-## Installation 💻
+## Installation ⚙️
 In your `build.gradle.kts` implement your dependencies:
 
 ```kotlin
@@ -22,7 +22,7 @@ dependencies {
 }
 ```
 
-## Usage Example
+## Usage Example 📚
 Import the module in your project:
 
 ```kotlin
